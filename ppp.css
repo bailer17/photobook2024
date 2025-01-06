@@ -1,0 +1,586 @@
+/*-------------- VARIABLES ---------*/
+/*FR — changer les variables largeur, hauteur (format de la page), marges et position du footer */
+/*EN — Change variable of the page width, page height, width and footer position*/
+
+:root {
+	/* Largeur de la page / Page width */
+	--page-width: 210mm;
+	/* Hauteur de la page / Page height */
+	--page-height: 148mm;
+	/* Marge de la page / Page margins */
+	--page-margin: 0mm;
+}
+
+/*--------- GENERAL STYLE -------*/
+
+body {
+	margin : 0;
+	height: 100%;
+}
+
+.website {
+	background-color: rgb(49, 49, 49);
+}
+
+
+a:link {
+  color: rgb(255, 0, 255);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(255, 0, 242);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(225, 0, 255, 0.606);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+h1 {
+	font-family: 'Roboto Mono', monospace;
+    font-size: 12pt;
+    font-weight: 700;
+	padding-left:10%;
+	padding-top:5%;
+	color: white;
+}
+
+h2 {
+	font-family: 'Roboto Mono', monospace;
+    font-size: 10pt;
+    font-weight: 500;
+	padding-left:10%;
+	padding-top:0%;
+	padding-bottom: 20px;
+	color: white;
+
+}
+
+p {
+    font-size: 9pt;
+    text-align: left;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+	padding-left:10%;
+	padding-top:0%;
+	color: white;
+}
+
+p#info {
+color: black;
+font-size: 6pt;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+	padding-left:10%;
+	padding-top:0%;
+
+}
+
+p#author {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-family: 'Roboto Mono', monospace;
+    font-weight: 200;
+	font-size: 7pt;
+}
+
+figcaption {
+	font-size: 6pt;
+    text-align: left;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+	padding-left:1%;
+	padding-top:1%;
+
+}
+
+.centered {
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+  }
+
+.wrapper {
+    display:grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-gap:0px;
+    grid-template-rows: repeat(1,1fr);
+    margin: 50px;
+    }
+
+.breit {
+	display:grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap:0px;
+	grid-template-rows: repeat(1,1fr);
+	margin: 50px;
+	}
+
+.wrapperprint {
+	display:grid;
+	grid-template-columns: repeat(9, 1fr);
+	grid-gap:0px;
+	grid-template-rows: repeat(1,1fr);
+	margin: 0px;
+	}
+
+
+
+
+/*--images web --*/
+
+	.eins {
+		grid-column: 1/10;
+		grid-row: 1;
+		align-self: end;
+	}
+
+	.eins img {
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+	.zwei {
+		grid-column: 1/4;
+		grid-row: 1;
+		align-self: end;
+	}
+
+	.zwei img {
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.drei {
+		grid-column: 5/10;
+		grid-row: 1;
+		align-self: end;
+	}
+
+	.drei img {
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.vier {
+		grid-column: 1/5;
+		grid-row: 1;
+		align-self: end;
+	}
+
+	.vier img {
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.fünf {
+		grid-column: 6/10;
+		grid-row: 1;
+		align-self: end;
+	}
+
+	.fünf img {
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.sechs {
+		grid-column: 1/4;
+		grid-row: 1;
+		align-self: end;
+	}
+
+	.sechs img {
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.sieben {
+		grid-column: 4/7;
+		grid-row: 1;
+		align-self: end;
+	}
+
+	.sieben img {
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.acht {
+		grid-column: 7/10;
+		grid-row: 1;
+		align-self: end;
+	}
+
+	.acht img {
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.neun {
+		grid-column: 1/4;
+		grid-row: 1;
+		align-self: end;
+	}
+
+	.neun img {
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.zehn {
+		grid-column: 4/7;
+		grid-row: 1;
+		align-self: end;
+	}
+
+	.zehn img {
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+	.elf {
+		grid-column: 1/4;
+		grid-row: 1;
+		align-self: end;
+	}
+
+	.elf img {
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.zwelf {
+		grid-column: 4/7;
+		grid-row: 1;
+		align-self: end;
+	}
+
+	.zwelf img {
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.dreizehn {
+		grid-column: 1/4;
+		grid-row: 1;
+		align-self: end;
+	}
+
+	.dreizehn img {
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.vierzehn {
+		grid-column: 4/7;
+		grid-row: 1;
+		align-self: end;
+	}
+
+	.vierzehn img {
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.fünfzehn {
+		grid-column: 7/10;
+		grid-row: 1;
+		align-self: end;
+	}
+
+	.fünfzehn img {
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.sechszehn {
+		grid-column: 1/4;
+		grid-row: 1;
+		align-self: end;
+	}
+
+	.sechszehn img {
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.siebzehn {
+		grid-column: 4/7;
+		grid-row: 1;
+		align-self: end;
+	}
+
+	.siebzehn img {
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+	.achtzehn {
+		grid-column: 4/7;
+		grid-row: 1;
+		align-self: end;
+	}
+
+	.achtzehn img {
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.neunzehn {
+		grid-column: 1/4;
+		grid-row: 1;
+		align-self: end;
+	}
+
+	.neunzehn img {
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+	.zwanzig {
+		grid-column: 1/4;
+		grid-row: 1;
+		align-self: end;
+	}
+
+	.zwanzig img {
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.einzwanzig {
+		grid-column: 4/7;
+		grid-row: 1;
+		align-self: end;
+	}
+
+	.einzwanzig img {
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.zweizwanzig {
+		grid-column: 7/10;
+		grid-row: 1;
+		align-self: end;
+	}
+
+	.zweizwanzig img {
+		width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+
+
+/*--images web --*/
+
+/*--images print --*/
+
+.cover {
+	grid-column: 1/10;
+	grid-row: 1;
+    align-self: end;
+}
+
+.cover img {
+	width:105.7%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.one {
+    grid-column: 1/10;
+    grid-row: 1;
+    align-self: end;
+    
+}
+.one img {
+        width:100%;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+ }
+
+ .two {
+    grid-column: 2/6;
+    grid-row: 1;
+    align-self: end;
+    
+}
+.two img {
+        width:100%;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+ }
+
+ .three {
+    grid-column: 6/10;
+    grid-row: 1;
+    align-self: end;
+    
+}
+.three img {
+        width:100%;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+ }
+ 
+ .four {
+    grid-column: 7/10;
+    grid-row: 1;
+    align-self: end;
+}
+.four img {
+        width:100%;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+ }
+
+ .five {
+    grid-column: 3/7;
+    grid-row: 1;
+    align-self: end;
+    
+}
+.five img {
+        width:100%;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+ }
+
+/*--images print --*/
+
+
+.colophon {
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+   
+}
+
+/* Ajouter la classe .print dans une balise HTML pour n'afficher que les éléments à l'impression*/
+/* Add .print class to display html elements only for the print */
+.print {
+	display: none;
+}
+
+/* Ajouter la classe .screen dans une balise HTML pour n'afficher les éléments seulement à l'écran */
+/* Add .screen class to display html elements only for the print */
+.screen {
+	display: block;
+}
+
+
+
+
+/*--------- PRINT STYLE -------*/
+
+/* Media queries : permet d'appliquer des styles en fonction du support de lecture de la page web */
+/* Media queries : Apply styles in relation of the reading support of the webpage */
+
+@media print {
+	@page {
+		/* choisir le format d'export */
+		/* choosse the size of the pdf output */
+		size: 210mm 148mm;
+		margin-right: auto;
+		margin-left: auto;
+    
+	}
+
+    body {
+		margin: 0;
+		padding: 0;
+	}
+
+	/* Paramètres de la page */
+	/* Page settings */
+    .page {
+			width: calc(var(--page-width) + 1);
+			height: calc(calc(var(--page-height) - var(--page-margin) * 2) - 1mm);
+			padding: var(--page-margin);
+			position: relative;
+	}
+
+	/* Affiche les éléments ayant la classe print */
+	/* Display HTML element with the .print class */
+    .print {
+		display: block;
+	}
+
+	/* N'affiche pas les éléments ayant la classe screen */
+	/* Doesn't display HTML element with the .screen class */
+    .screen {
+		display: none;
+	}
+
+}
