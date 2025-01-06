@@ -48,7 +48,7 @@ a:active {
 }
 
 
-h1 {
+h1 {border: 0;
 	font-family: 'Roboto Mono', monospace;
     font-size: 12pt;
     font-weight: 700;
@@ -57,7 +57,7 @@ h1 {
 	color: white;
 }
 
-h2 {
+h2 {border: 0;
 	font-family: 'Roboto Mono', monospace;
     font-size: 10pt;
     font-weight: 500;
